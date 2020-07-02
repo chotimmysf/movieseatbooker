@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Movie Seat Booking</title>
+  </head>
+  <body>
+    <div class="movie-container">
+      <label>Select the movie you want to see.</label>
+      <select id="movie">
+        <option value="11.99">Spy Kids</option>
+        <option value="13.99">Toy Story 4</option>
+        <option value="15.99">Toy Story 4 3D</option>
+        <option value="7.99">Baby Shark: The Movie</option>
+        <option value="9.99">Black Summer</option>
+        <option value="11.99">Kingdom: The Movie</option>
+        <option value="13.99">Kingdom: The Movie 3D</option>
+        <option value="20.49">Avengers: Infinity War</option>
+        <option value="12.50">Nerve</option>
+        <option value="8.49">The Den</option>
+        <option value="6.50">Winx Club: The Secret of the Lost Kingdom</option>
+        <option value="10.50">Elf Bowling: The Movie</option>
+      </select>
+    </div>
+
+    <ul class="showcase">
+      <li>
+        <div class="seat"></div>
+        <small>N/A</small>
+      </li>
+      <li>
+        <div class="seat_selected"></div>
+        <small>Selected</small>
+      </li>
+      <li>
+        <div class="seat_occupied"></div>
+        <small>Occupied</small>
+      </li>
+    </ul>
+
+    <div class="container">
+      <div class="screen">
+        <div class="row">
+          <!--Row 1-->
+          <div class="seat_occupied"></div>
+          <div class="seat_occupied"></div>
+          <div class="seat"></div>
+          <div class="seat_occupied"></div>
+          <div class="seat_occupied"></div>
+          <div class="seat"></div>
+          <div class="seat_occupied"></div>
+          <div class="seat_occupied"></div>
+          <div class="seat_occupied"></div>
+          <div class="seat"></div>
+        </div>
+        <div class="row">
+          <!--Row 2-->
+          <div class="seat"></div>
+          <div class="seat_occupied"></div>
+          <div class="seat_occupied"></div>
+          <div class="seat_occupied"></div>
+          <div class="seat_occupied"></div>
+          <div class="seat"></div>
+          <div class="seat_occupied"></div>
+          <div class="seat_occupied"></div>
+          <div class="seat"></div>
+          <div class="seat_occupied"></div>
+        </div>
+        <div class="row">
+          <!--Row 3-->
+          <div class="seat_occupied"></div>
+          <div class="seat"></div>
+          <div class="seat_occupied"></div>
+          <div class="seat_occupied"></div>
+          <div class="seat_occupied"></div>
+          <div class="seat"></div>
+          <div class="seat_occupied"></div>
+          <div class="seat_occupied"></div>
+          <div class="seat"></div>
+          <div class="seat_occupied"></div>
+        </div>
+        <div class="row">
+          <!--Row 4-->
+          <div class="seat_occupied"></div>
+          <div class="seat"></div>
+          <div class="seat_occupied"></div>
+          <div class="seat_occupied"></div>
+          <div class="seat_occupied"></div>
+          <div class="seat_occupied"></div>
+          <div class="seat_occupied"></div>
+          <div class="seat"></div>
+          <div class="seat_occupied"></div>
+          <div class="seat"></div>
+        </div>
+        <div class="row">
+          <!--Row 5-->
+          <div class="seat_occupied"></div>
+          <div class="seat_occupied"></div>
+          <div class="seat"></div>
+          <div class="seat_occupied"></div>
+          <div class="seat_occupied"></div>
+          <div class="seat_occupied"></div>
+          <div class="seat"></div>
+          <div class="seat_occupied"></div>
+          <div class="seat_occupied"></div>
+          <div class="seat_occupied"></div>
+        </div>
+        <div class="row">
+          <!--Row 6-->
+          <div class="seat"></div>
+          <div class="seat_occupied"></div>
+          <div class="seat_occupied"></div>
+          <div class="seat_occupied"></div>
+          <div class="seat"></div>
+          <div class="seat_occupied"></div>
+          <div class="seat_occupied"></div>
+          <div class="seat"></div>
+          <div class="seat_occupied"></div>
+          <div class="seat"></div>
+        </div>
+        <div class="row">
+          <!--Row 7-->
+          <div class="seat_occupied"></div>
+          <div class="seat_occupied"></div>
+          <div class="seat_occupied"></div>
+          <div class="seat"></div>
+          <div class="seat_occupied"></div>
+          <div class="seat_occupied"></div>
+          <div class="seat"></div>
+          <div class="seat_occupied"></div>
+          <div class="seat"></div>
+          <div class="seat_occupied"></div>
+        </div>
+        <div class="row">
+          <!--Row 8-->
+          <div class="seat"></div>
+          <div class="seat_occupied"></div>
+          <div class="seat"></div>
+          <div class="seat_occupied"></div>
+          <div class="seat_occupied"></div>
+          <div class="seat_occupied"></div>
+          <div class="seat"></div>
+          <div class="seat_occupied"></div>
+          <div class="seat"></div>
+          <div class="seat_occupied"></div>
+        </div>
+        <div class="row">
+          <!--Row 9-->
+          <div class="seat_occupied"></div>
+          <div class="seat"></div>
+          <div class="seat_occupied"></div>
+          <div class="seat"></div>
+          <div class="seat_occupied"></div>
+          <div class="seat"></div>
+          <div class="seat_occupied"></div>
+          <div class="seat"></div>
+          <div class="seat_occupied"></div>
+          <div class="seat_occupied"></div>
+        </div>
+      </div>
+    </div>
+
+    <h1>Pick a seat to sit at during your movie!</h1>
+    <h2>
+      Note: Due to the ongoing COVID-19 pandemic, many seats will be marked
+      "occupied" or otherwise unavailable in order to maintain 6 feet social
+      distancing of customers. Face coverings are required to enter the theatre.
+    </h2>
+    <div class="text">
+      You have selected <span id="count">0</span>seats, for a price of
+      <span id="total">0</span>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
