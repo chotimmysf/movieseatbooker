@@ -21,7 +21,7 @@ body {
 }
 
 .movie-container select {
-  background-color: #798dff;
+  background-color: #530a85;
   color: #ffffff;
   border: 0;
   border-radius: 5px;
@@ -47,22 +47,86 @@ body {
 }
 
 .seat.occupied {
-  background-color: #e96325;
+  background-color: #ffffff;
 }
 
 .seat.coronavirus {
   background-color: #e43fd6;
 }
 
-h2 {
-  font-size: 12px;
+.seat:nth-of-type(3) {
+  margin-right: 18px;
+}
+.seat:nth-last-of-type(3) {
+  margin-left: 18px;
+}
+
+.seat:not(.occupied):hover {
+  cursor: pointer;
+  transform: scale(1.5);
+}
+.showcase .seat:not(.occupied):hover {
+  cursor: default;
+  transform: scale(1);
+}
+
+.showcase {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #777777;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.showcase li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+}
+
+.showcase li small {
+  margin-left: 2px;
+}
+
+h1 {
+  margin-top: 150px;
 }
 
 .bigtext {
   font-size: 20px;
-  color: #e96325;
+  color: #e43fd6;
 }
 
 .row {
   display: flex;
+}
+
+.screen {
+  background-color: #ffffff;
+  height: 70px;
+  width: 100%;
+  margin: 15px 0;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.7);
+}
+
+.container {
+  perspective: 1000px;
+  margin-bottom: 15px;
+}
+
+p.text {
+  margin: 5px 0;
+}
+
+p.text span {
+  color: #6feaf6;
+}
+
+h2 {
+  font-size: 12px;
+  text-align: center;
+  padding: 30px;
 }
