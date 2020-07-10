@@ -15,8 +15,7 @@ function updateSelectedCount() {
 container.addEventListener("click", (e) => {
   if (
     e.target.classList.contains("seat") &&
-    !e.target.classList.contains("occupied") &&
-    !e.target.classList.contains("coronavirus")
+    !e.target.classList.contains("occupied")
   ) {
     e.target.classList.toggle("selected");
 

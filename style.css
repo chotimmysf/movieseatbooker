@@ -61,11 +61,13 @@ body {
   margin-left: 18px;
 }
 
-.seat:not(.occupied):hover {
+.seat:not(.occupied):not(.coronavirus):hover {
   cursor: pointer;
   transform: scale(1.5);
 }
-.showcase .seat:not(.occupied):hover {
+.showcase .seat:not(.occupied),
+.seat:not(.coronavirus),
+:hover {
   cursor: default;
   transform: scale(1);
 }
