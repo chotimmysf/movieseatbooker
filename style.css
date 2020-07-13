@@ -50,9 +50,9 @@ body {
   background-color: #ffffff;
 }
 
-.seat.coronavirus {
+/* .seat.coronavirus {
   background-color: #e43fd6;
-}
+} */
 
 .seat:nth-of-type(3) {
   margin-right: 18px;
@@ -61,13 +61,11 @@ body {
   margin-left: 18px;
 }
 
-.seat:not(.occupied):not(.coronavirus):hover {
+.seat:not(.occupied):hover {
   cursor: pointer;
   transform: scale(1.5);
 }
-.showcase .seat:not(.occupied),
-.seat:not(.coronavirus),
-:hover {
+.showcase .seat:not(.occupied):hover {
   cursor: default;
   transform: scale(1);
 }
