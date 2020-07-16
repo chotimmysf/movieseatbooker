@@ -50,10 +50,20 @@ body {
   background-color: #ffffff;
 }
 
-/* .seat.coronavirus {
+.seat.coronavirus {
   background-color: #e43fd6;
-} */
+}
 
+.screen {
+  background-color: #ffffff;
+  height: 80px;
+  width: 22.5%;
+  margin: 15px 15px;
+  transform: rotateX(135deg);
+  box-shadow: 0 10px 3px rgba(255, 255, 255, 0.7);
+  perspective: 1000px;
+  margin-bottom: 20px;
+}
 .seat:nth-of-type(3) {
   margin-right: 18px;
 }
@@ -97,14 +107,24 @@ body {
 
 p.text {
   margin: 5px 0;
+  font-size: 40px;
 }
 
 p.text span {
   color: #6feaf6;
 }
 
+h1 {
+  font-size: 30px;
+  border-radius: 10px;
+  border-style: double dotted;
+  border-color: #e43fd6;
+  border-width: 20px;
+  background-color: #530a85;
+}
+
 h2 {
-  font-size: 12px;
+  font-size: 16px;
   text-align: center;
   padding: 30px;
 }
